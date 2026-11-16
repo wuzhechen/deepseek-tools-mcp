@@ -1,0 +1,54 @@
+{
+  "name": "deepseek-tools-mcp",
+  "version": "0.1.0",
+  "description": "Unofficial MCP server for DeepSeek's Search, Fetch, OCR, ASR and TTS APIs.",
+  "type": "module",
+  "bin": {
+    "deepseek-tools-mcp": "dist/src/index.js"
+  },
+  "main": "dist/src/index.js",
+  "files": [
+    "dist/src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "start": "node dist/src/index.js",
+    "smoke": "npm run build && node dist/scripts/smoke.js",
+    "smoke:mcp": "npm run build && node dist/scripts/mcp-smoke.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "deepseek",
+    "web-search",
+    "web-fetch",
+    "ocr",
+    "asr",
+    "tts"
+  ],
+  "license": "MIT",
+  "author": "wuzhechen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuzhechen/deepseek-tools-mcp.git"
+  },
+  "homepage": "https://github.com/wuzhechen/deepseek-tools-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/wuzhechen/deepseek-tools-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.0"
+  }
+}

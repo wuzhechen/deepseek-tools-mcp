@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "deepseek-tools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "deepseek-tools-mcp"],
+      "env": {
+        "DEEPSEEK_API_KEY": "<your-deepseek-api-key>"
+      }
+    }
+  }
+}
