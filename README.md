@@ -1,5 +1,7 @@
 # deepseek-tools-mcp
 
+![CI](https://github.com/wuzhechen/deepseek-tools-mcp/actions/workflows/ci.yml/badge.svg)
+
 **Unofficial** MCP server that exposes DeepSeek's standalone tools APIs as MCP tools:
 **Web Search, Fetch, OCR, ASR and TTS**.
 
